@@ -7,6 +7,7 @@ Connect4 is a two-player board game that allows each player to drop a coloured d
 - Red always starts first
 - Board follows a 6 rows by 7 columns grid
 - Each player takes turns between placing disc into a column
+- Only one disc can occupy a single place in a position of the grid
 - When adding a disc into a column, it must and will be placed to its lowest available row
 - Game will keep going until a player manages to place four discs in a row (vertically, horizontally or diagonally)
 - Maximum number of turns for the game is 42
