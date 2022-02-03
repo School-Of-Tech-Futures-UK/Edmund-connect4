@@ -1,23 +1,103 @@
 h1{
-    position:relative;
-    left: 38px
+    text-align: center;
+    font-family: fantasy;
+}
+
+body {
+    background-image: url('background.jpg') ;
+    background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover
+}
+
+.col {
+    width: 50px;
+    margin: auto;
+    align-items: center;
+    text-align: center;
+    font-size: 30px;
+}
+
+.row {
+    height: 50px;
+    margin: 0px auto;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.col:hover {
+    opacity: 0.8;
+    outline: 2px solid white;
 }
 
 #game-grid {
     background-color: black;
-    height:160px;
-    width:300px;
-    margin:10px;
-    text-align: center;
+    height:310px;
+    width:400px;
+    margin:auto;
+    justify-content: center;
+    ;
 }
 
+#showTurns{
+    text-align: center;
+    margin:auto;
+    font-family: fantasy;
+}
 
 #winner-text {
-    position: relative;
+    
+    text-align: center;
+    position:relative;
+    top: 30px;
+    font-family: fantasy;
+    font-size: 50px;
+}
+
+#playerTurn{
+    position:relative;
     top: 50px
 }
 
 #reset{
+    text-align: center;
+    font-family: fantasy;
+    
+}
+
+.playerName{
     position:relative;
-    top:60px
+    left:400px;
+    top: 20px;
+    font-family: fantasy;
+}
+
+#highScoreBoard{
+    justify-content: center;
+}
+
+#topScores{
+    background-color: darkgray;
+}
+
+#colour-turn{
+    color: rgb(245, 11, 11);
+    font-size: 20px;
+    -webkit-text-stroke: 0px black
+
+}
+
+.fall {
+    animation-name: fall-animation;
+    animation-duration: 500ms;
+}
+
+@keyframes fall-animation {
+    from {
+        transform: translateY(-300px);
+    }
+    to {
+        transform: translateY(0);
+    }
 }
